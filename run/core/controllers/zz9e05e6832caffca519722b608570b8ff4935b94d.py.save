@@ -1,0 +1,12 @@
+#/usr/bin/env
+from flask import Blueprint, render_template
+controller = Blueprint('zz9e05e6832caffca519722b608570b8ff4935b94d', __name__, url_prefix='/mouse')
+
+@controller.route('/',methods=['GET'])
+def show_zz9e05e6832caffca519722b608570b8ff4935b94d():
+	 return render_template('zz9e05e6832caffca519722b608570b8ff4935b94d.html')
+
+
+@controller.route('/buy',methods=['GET'])
+def buy():
+	 return 'you can buy a mouse here'
